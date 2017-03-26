@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	/*
+		创建函数的几种方法
+	*/
+	// 1
+	function checkname(){
+		console.log('this is checkname');
+	}
+	checkname();
+	// 2
+	var a = function (){};
+	a.checkname = function (){
+		console.log('checkname');
+	};
+	a.checkname();
+	// 3
+	var b = function(){
+		this.checkname = function(){
+			console.log('checkname');
+		};
+	};
+	var b1 = new b();
+	b1.checkname();
+	// 4
+	var c = function(){};
+	c.prototype.checknamea = function(){
+		console.log('checkname');
+	}
+	var c1 = new c();
+	c1.checknamea();
+	// 5
+	var c2 = function (){};
+	c2.prototype.checkname  = function(){
+			console.log('checkname')
+		};
+	var c22 = new c2();
+	console.log(c22);
+	c22.checkname();
+	// 6
+	var d = {
+		checkname : function(){
+			console.log('checkname');
+		}
+	};
+	d.checkname();
+	// 7
+	var e = function (){
+		return {
+			checkname : function(){
+				console.log('checkname');
+			}
+		}
+	}
+	e().checkname();
+
+</script>
+</body>
+</html>
