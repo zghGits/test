@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script src='prototype-1.7.js'></script>
+<script>
+	/*
+		对象的链式调用
+	*/
+	var a = function(){};
+	a.prototype={
+		checkname : function (){
+			console.log('checkname');
+			return this;
+		},
+		checkemail : function(){
+			console.log('checkemail');
+			return this;
+		}
+	};
+	var b = new a();
+	b.checkemail().checkname();
+</script>
+</body>
+</html>

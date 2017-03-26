@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+		
+	Function.prototype.addMethod = function(name,fn){
+		this[name] = fn;
+		return this;
+	};
+
+	var a = function(){};
+
+	a.addMethod('checkname',function(){
+		console.log('checkname');
+		return this;
+	}).addMethod('checkemail',function(){
+		console.log('checkemail');
+		return this;
+	});
+
+	var b = new a();
+
+	b.checkemail();
+
+	console.log(b);
+	$('#a').on('click',function(){
+		var _this = $(this);
+		$.ajax({
+			success:function(){
+				$(this).
+			}
+		});
+	});
+
+
+</script>
+</body>
+</html>
