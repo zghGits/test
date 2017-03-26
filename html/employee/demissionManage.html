@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<link rel="stylesheet" href="../../css/lib/bootstrap.css"/>
+	<link rel="stylesheet" href="../../css/lib/layer.css" />
+	<link rel="stylesheet" href="../../fonts/iconfont.css">
+	<link rel="stylesheet" href="../../css/employee/demission/demissionManage.css"/>
+	<title>离职管理</title>
+</head>
+<body>
+	<div class="demissionManage">
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="active"><a role="tab" data-toggle="tab" href="#onDemission">待离职员工</a></li>
+			<li><a role="tab" data-toggle="tab" href="#formerEmployee">已离职员工</a></li>
+		</ul>
+		<div class="tab-content">
+			<!--待离职员工-->
+			<div  role="tabpanel" id="onDemission" class="tab-pane active">
+				<div>
+					<div class="col-xs-2">
+						<button id="addEmployee" class="btn btn-default"></button>
+					</div>
+					<div class="col-xs-6">
+						<input class="search" type="text" placeholder="按姓名搜索（多个用分号）"/>
+					</div>
+					<div class="col-xs-2">
+						<span><img src="../../images/i"></span>
+						<span><img src="../image/icon－shaixuan－default.svg"></span>
+					</div>
+				</div>
+				<div></div>
+				<div></div>
+				<div class="onJob-container">
+					
+					<div class="onJob-container-img">
+					</div>
+					<div>
+						<table class="table table-bordered table-toBeLeft">
+							<thead>
+							<tr>
+								<td>姓名</td>
+								<td>手机号码</td>
+								<td>部门类型</td>
+								<td>职位类型</td>
+								<td>离职生效时间</td>
+								<td style="border-right: 0">操作</td>
+							</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+					</div>
+					<div class="onJob-total">
+						<span class="onJob-total-span">总计：<span class="onJob-total-count"></span></span>
+					</div>
+				
+				</div>
+			</div>
+			<!--已离职员工-->
+			<div  role="tabpanel" id="formerEmployee" class="tab-pane">
+				<div class="leave-container">
+					<div class="input-group">
+						<i class="glyphicon glyphicon-search search2"></i>
+						<input type="text" class="form-control leave-container-input" placeholder="按姓名搜索（多个用分号）">
+					</div>
+					<div class="leave-container-img">
+						<img src="../image/OrganizationTree.png" alt="组织树">
+						<img src="../image/icon－shaixuan－default.svg" alt="筛选">
+					</div>
+					<div class="leave-container-table">
+						<table class="table table-bordered table-haveLeft table2excel">
+							<thead>
+							<tr>
+								<td><input type="checkbox">姓名</td>
+								<td>工号</td>
+								<td>手机号码</td>
+								<td>部门类型</td>
+								<td>职位类型</td>
+								<td>在职时长</td>
+								<td>离职类型</td>
+								<td>离职时间</td>
+								<td style="border-right: 0">操作</td>
+							</tr>
+							</thead>
+							<tbody></tbody>
+						</table></div>
+					<div class="leave-total">
+						<span class="haveLeft-total-span">总计：<span class="haveLeft-total-count" style="color: #000"></span></span>
+					</div>
+					<div class="leave-btn">
+						<button class="btn btn-success bottom2" data-toggle="modal" data-target="#SendMessage ">发短信</button>
+						<button class="btn btn-default bottom3">导出离职信息</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--打印离职证明模态框-->
+	<div class="modal fade" id="separationCertificate" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" style="width: 400px">
+			<div class="modal-content">
+				<form class="form" method="post" action="">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+						        aria-hidden="true">&times;</button>
+						<h5 class="modal-title">打印离职证明</h5>
+					</div>
+					<div class="modal-body">
+						<div style="text-align: center">离职证明</div>
+						<div class="separationCertificate-txt">
+							<button class="edit">编辑</button>
+							<div class="form-group">
+                                <textarea class="form-control" rows="10"
+                                          name="separationCertificate-textarea" readonly="readonly">1、工作交接
+											确认其已在规定时间内将负责的工作完全移交给继任者，并得到相关部门负责人确认；
+											2、物料归还
+											确认其从公司领用或借用的物资（电脑、手机、工牌）在离职日前归还，并得到人事部门负责人确认；
+											3、借款归还
+											确认其预支的借款在离职日前归还，并得到财务部门负责人确认；
+                                </textarea>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-success" style="width: 90px;height: 30px">
+							确认
+						</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal"
+						        style="width: 90px;height: 30px">取消
+						</button>
+					
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<script data-main="../../js/employee/demission/demissionManage_main" src="../../js/lib/require.min.js"></script>
+</body>
+</html>

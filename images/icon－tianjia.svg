@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>icon－tianjia</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="备注" transform="translate(-163.000000, -472.000000)" fill="#4990E2">
+            <g id="Group-16" transform="translate(37.000000, 272.000000)">
+                <g id="Group-5" transform="translate(16.000000, 65.000000)">
+                    <g id="Group-3">
+                        <g id="叉" transform="translate(60.000000, 135.000000)">
+                            <path d="M56.9999387,6.99998003 L61.5769804,6.99998003 C61.8308047,6.99998003 62,6.80004708 62,6.49999001 C62,6.19993295 61.8308047,6 61.5769804,6 L56.9999387,6 L56.9999387,1.42308296 C56.9999387,1.16917983 56.7999991,1 56.5000064,1 C56.1999581,1 56,1.1692426 56,1.42308296 L56,6 L51.4230824,6 C51.1691796,6 51,6.19993295 51,6.49999001 C51,6.80004708 51.1692424,6.99998003 51.4230824,6.99998003 L56,6.99998003 L56,11.5769798 C56,11.8308202 56.1999581,12 56.5000064,12 C56.7999991,12 56.9999387,11.8308202 56.9999387,11.5769798 L56.9999387,6.99998003 Z" id="icon_chuangjian"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

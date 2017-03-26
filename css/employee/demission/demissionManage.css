@@ -1,0 +1,124 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	outline: none;
+}
+
+div.demissionManage {
+	width: 100%;
+	height: 100%;
+	min-width: 820px;
+	min-height: 565px;
+	padding: 12px;
+	font-size: 14px;
+	box-sizing: border-box;
+	background-color: #FAFBFE;
+	position: relative;
+}
+
+div.demissionManage .nav-tabs {
+	border-bottom: 0;
+}
+
+div.demissionManage .nav-tabs > li{
+	padding: 0px 20px;
+}
+
+div.demissionManage .nav-tabs a{
+	padding: 10px 5px 15px;
+	color: #8897AA;
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+
+div.demissionManage .nav-tabs li.active a{
+	color: #354052;
+	border-bottom: 2px solid #2EA2F8;
+	background-color: transparent;
+}
+
+div.demissionManage .tab-content{
+	background: #FFFFFF;
+	border: 1px solid #E1E1E1;
+	border-radius: 6px;
+	padding: 20px;
+	overflow: hidden;
+}
+
+div.demissionManage .tab-content input.search {
+	width: 180px;
+	height: 24px;
+	margin-right: 9px;
+	font-size: 12px;
+	padding-left: 34px;
+	border-radius: 12px;
+	border: 1px solid #EEEEEE;
+	color: #B5B8BA;
+	line-height: 24px;
+	float: left;
+	background: url('../../../images/icon－searchchengyuan.svg') 5px center no-repeat #F5F5F5;
+}
+
+div.demissionManage .tab-content input.search:focus{
+	background: url('../../../images/icon－searchchengyuan－hov.svg') 5px center no-repeat #F5F5F5;
+	color: #333333;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	border:0;
+	border-bottom:2px solid #2EA2F8;
+	background-color: #FAFBFE;
+}
+
+
+
+
+.modal-body .table thead tr td{
+	border: 0;
+}
+.modal-body .table tbody tr td {
+	border: 0;
+}
+.table-td{
+	text-align: right;
+}
+.modal-footer{
+	text-align: center;
+}
+
+.LeaveDealWith .LeaveDealWith-head{
+	background: #FFFFFF;
+	border: 0 solid #979797;
+	height: 58px;
+	
+}
+.LeaveDealWith ul li{
+	width: 390px;
+	height: 58px;
+	display: inline-block;
+	text-align: center;
+	margin-top: 22px;
+	font-size: 14px;
+	color: #000000;
+}
+.separationCertificate-txt{
+	background: #FAFAFA;
+	border-radius: 8px;
+	width: 351px;
+	margin-top: 10px;
+}
+.separationCertificate-txt .edit{
+	font-size: 16px;
+	color: #47C35A;
+	line-height: 22px;
+	float: right;
+	border: 0;
+	background: #FAFAFA;
+	margin-right: 20px;
+}
+.separationCertificate-txt .form-control{
+	width: 351px;
+	border: 0;
+	background: #FAFAFA;
+}

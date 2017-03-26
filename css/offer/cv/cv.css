@@ -1,0 +1,181 @@
+/*-----------------------------公共的弹窗样式---------------------------------*/
+*{outline: none;}
+
+ul,li {
+    list-style: none;
+}
+
+#cv_createModal select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+}
+
+#cv_createModal .modal-dialog{
+    z-index: 1041;
+    width: 500pt;
+}
+
+#cv_createModal .modal-header{
+    position: relative;
+    height: 32pt;
+}
+
+#cv_createModal .modal-header > *{
+    position: absolute;
+    bottom:10px;
+}
+
+#cv_createModal .modal-header > .close{
+    right: 13px;
+    bottom: 14px;
+}
+
+#cv_createModal .modal-title{
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #546576;
+    letter-spacing: 0px;
+}
+
+#cv_createModal .modal-body{
+    padding: 0 40pt;
+}
+
+#cv_createModal .modal-body > div{
+    overflow-x: hidden;
+}
+
+#cv_createModal .modal-footer{
+    height: 52pt;
+    text-align: center;
+}
+
+#cv_createModal .modal-footer button{
+    border-radius: 4px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    letter-spacing: 1px;
+    width: 90pt;
+    height: 30pt;
+    margin: 0 10px;
+}
+
+#cv_createModal .create{
+    color: #FFFFFF;
+    background: #70BF73;
+    border: 1px solid #3B9640;
+}
+
+#cv_createModal .cancel{
+    color: #888888;
+    background: #FFFFFF;
+    border: 1px solid #999999;
+}
+
+#cv_createForm input[type='text'],#cv_createForm textarea[name='remark']{
+    border:none;
+    background: #F5F5F5;
+    padding:5pt 10pt;
+}
+
+/*-----------------------------创建简历弹框---------------------------------*/
+#cv_createForm{
+    max-height: 430px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 575px;
+}
+
+#cv_createForm > div{
+    padding: 20pt 5pt;
+    position: relative;
+}
+
+#cv_createForm > div:first-child{
+    border-bottom: 2pt solid #E1E1E1;
+}
+
+#cv_createForm > div:first-child > div:nth-child(2){
+    position: absolute;
+    right: 78px;
+}
+
+#cv_createForm > div:nth-child(2) > div:nth-child(2){
+    position: absolute;
+    right: 206px;
+}
+
+#cv_createForm .sex_container label:last-child{
+    position: relative;
+    left: 44pt;
+}
+
+#cv_createForm > div > div{
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+#cv_createForm .title{
+    font-family:PingFangSC-Regular;
+    font-size: 12px;
+    color: #666666;
+    font-weight: 500;
+}
+
+#cv_createForm .content{
+    font-family:PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+}
+
+#cv_createForm input[name="birthDate"]{
+    margin-left: 22pt;
+    background-color:white;
+    cursor: pointer;
+}
+
+#cv_createForm .more_link,#cv_createForm .more_container{
+    display: block;
+}
+
+#cv_createForm .more_link{
+    cursor: pointer;
+    margin-left:182pt;
+}
+
+#cv_createForm .errorInfo{
+    height: 17pt;
+    color:red;
+}
+
+#cv_createForm .more_container > div:first-child,#cv_createForm .more_container > div:nth-child(2){
+    margin-bottom: 29pt;
+}
+
+#cv_createForm input[name="enterTime"]{
+    cursor: pointer;
+    margin-bottom: 17pt;
+}
+
+#cv_createForm input[name='mobile'],#cv_createForm input[name='email'],
+#cv_createForm input[name='enterTime'],#cv_createForm textarea[name='remark']{
+    width: 408pt;
+}
+
+#cv_createForm textarea[name='remark']{
+    resize: none;
+}
+
+#cv_createForm div[name="position"]{
+    /*height: 30pt;*/
+    width: 146pt;
+    cursor: pointer;
+    border:none;
+    background: #F5F5F5;
+    padding-left:10pt;
+    color:#999;
+}

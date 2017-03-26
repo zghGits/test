@@ -1,0 +1,301 @@
+*{
+    outline: none;
+}
+body{
+    background: #FAFBFE;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #000000;
+    min-width: 820px;
+    min-height: 565px;
+    width: 820px;
+    height: 565px;
+    padding: 10px;
+}
+a{
+    color: #999999;
+}
+/*表格通用样式*/
+.table-striped > tbody > tr:nth-of-type(even), thead {
+    background-color: #f9f9f9;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+.table-bordered > thead > tr > td {
+    border-bottom-width: 1px;
+    vertical-align: middle;
+}
+.table-bordered > tbody > tr > td {
+    vertical-align: middle;
+    text-align: center;
+    color: #3D3D3D;
+}
+thead, tbody > tr > td:first-child {
+    color: #000000;
+    font-weight: bold;
+}
+table tr > td:first-child, table tr > td:last-child, .table, thead {
+    border-left-style: none;
+    border-right-style: none;
+}
+/*表格通用样式end*/
+
+/*修改bootstrap样式*/
+a:hover{
+    text-decoration: none;
+}
+.glyphicon-trash{
+    cursor: pointer;
+}
+.glyphicon{
+    top:2px;
+}
+.pagination > li > a, .pagination > li > span {
+    padding: 4px 0px;
+}
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #eee;
+    content: "| ";
+}
+/*修改bootstrapend*/
+
+#contractmanage  .breadcrumb {
+    margin-bottom: 10px;
+    font-size: 12px;
+    background: #FFFFFF;
+}
+#contractmanage  #box {
+    border: 1px solid #E1E1E1;
+    border-radius: 6px;
+    box-shadow: 1px 3px 10px #E1E1E1;
+    padding: 28px 46px;
+    background: #ffffff;
+}
+#contractmanage  #boxHeader{
+    height:25px;
+    margin-bottom: 13px;
+    position: relative;
+}
+#contractmanage  .searchBox{
+    float:left;
+}
+#contractmanage div.tableOut{
+    overflow-x: auto;
+}
+#contractmanage  table{
+    min-width:1232px;
+}
+#contractmanage  tr {
+    width: 1283px;
+    height: 45px;
+}
+#contractmanage  td.name{
+    width:200px;
+}
+#contractmanage  td.jobNumber{
+    width:140px;
+}
+#contractmanage  td.phoneNumber{
+    width:152px;
+}
+#contractmanage  td.industryTitle{
+    width:210px;
+}
+#contractmanage  td.jobTitle{
+    width:235px;
+}
+#contractmanage  td.operate{
+    width:116px;
+}
+#contractmanage  img{
+    cursor: pointer;
+}
+
+
+/*搜索框*/
+#contractmanage input.searchFrame {
+    width: 215px;
+    height: 24px;
+    margin-right: 9px;
+    font-size: 12px;
+    padding-left: 34px;
+    border-radius: 12px;
+    border: 1px solid #EEEEEE;
+    color: #B5B8BA;
+    line-height: 24px;
+    background: url('../../images/employee/icon－searchchengyuan.svg') 10px center no-repeat #F5F5F5;
+    letter-spacing: 1.71px;
+}
+#contractmanage input.searchFrame:focus
+{
+    border:1px solid #2EC16C;
+}
+/*搜索框end*/
+#contractmanage .shaixuanBox{
+    float:left;
+    margin-left:20px;
+    margin-top:2px;
+    font-size: 12px;
+}
+#contractmanage .shaixuanBox div{
+    width:110px;
+    height:20px;
+    background: #F9F9F9;
+    border: 1px solid #EEEEEE;
+    margin-right:10px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#contractmanage .shaixuanBox div .close{
+    font-size:20px;
+    position: absolute;
+    right: 2px;
+    top:-1px;
+}
+/*组织树框*/
+.zuzhishu{
+    width: 150px;
+    height: 100%;
+    padding: 10px 0;
+    background: #F9F9F9;
+    position: absolute;
+    border-left: 1px solid #ececec;
+    right: 0;
+    top: 0;
+    overflow-y: auto;
+    display: none;
+}
+.zuzhishu .company{
+    margin-left: 5px;
+}
+.zuzhishu .sel,#contractmanage .zuzhishu .sel1{
+    margin-left: 30px;
+}
+.zuzhishu .xuanze{
+    width:16px;
+    height:16px;
+    border:1px solid #B0BDC9;
+    border-radius: 3px;
+    display:inline-block;
+    position: relative;
+    top:3px;
+}
+.zuzhishu label{
+    font-weight:normal;
+}
+.zuzhishu .active{
+    background:#B0BDC9 url(../../images/assets/gouxuan.jpg) no-repeat 1px 2px ;
+    background-size: 13px;
+}
+.zuzhishu .btn {
+    width:60px;
+    height:30px;
+    padding:0;
+}
+/*筛选框*/
+#shaixuanModel{
+    width:250px;
+    font-size: 12px;
+    padding:0 11px;
+    position:absolute;
+    background: #ffffff;
+    right:11px;
+    top:111px;
+    z-index: 100;
+    border:1px solid #EFEFEF;
+    display:none;
+}
+#shaixuanModel .type{
+    border-bottom:1px solid #eee;
+    padding-top:7px;
+}
+#shaixuanModel .type p{
+    width: 48px;
+    padding:3px 0 1px;
+    border-bottom: 1px solid #999;
+}
+#shaixuanModel .type .row{
+    width: 204px;
+    margin: 8px auto;
+}
+#shaixuanModel .type .row div{
+    cursor: pointer;
+}
+#shaixuanModel .active{
+    color: #546576;
+}
+#shaixuanModel input{
+    width:90px;
+    height:20px;
+    padding-left:5px;
+}
+#shaixuanModel .rowPosition{
+    position:relative;
+}
+#shaixuanModel .cha{
+    position: absolute;
+    top:3px;
+    right: -11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#shaixuanModel .btn{
+    width:60px;
+    height:30px;
+    padding:0;
+}
+#shaixuanModel .bottom{
+    padding:10px;
+}
+
+/*筛选框end*/
+
+#contractmanage  tbody .xuqian{
+    color: #F5AC32;
+}
+#contractmanage  tbody .qianding{
+    color:#79C37C;
+}
+#contractmanage  tbody .zhongzhi{
+    color:#FD3F3F;
+}
+/*分页*/
+.footer{
+    margin-top:10px;
+    overflow: hidden;
+}
+.footer>.total{
+    height:30px;
+    line-height:30px;
+}
+.footer>ul{
+    height: 34px;
+    position: absolute;
+    left:35%;
+}
+.pagination{
+    margin:0;
+}
+.pagination li a {
+    width: 30px;
+    text-align: center;
+    margin-right: 5px;
+    background-color: #F5F5F5;
+    color: #333;
+    border: 1px solid #E1E1E1;
+}
+
+.pagination li a:hover, .pagination .active a, .pagination .active a:hover,.pagination > .active > a:focus {
+    background-color: #2EC16C;
+    color: #fff;
+    border-color: #2EC16C;
+}
+
+.pagination .pt {
+    width: 45px;
+}

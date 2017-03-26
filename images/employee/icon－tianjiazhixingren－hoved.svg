@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>icon－tianjiazhixingren－hoved</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9,18 C13.9705627,18 18,13.9705627 18,9 C18,4.02943725 13.9705627,0 9,0 C4.02943725,0 0,4.02943725 0,9 C0,13.9705627 4.02943725,18 9,18 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="18" height="18" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-_12_项目管理_编辑员工信息-copy-4" transform="translate(-748.000000, -438.000000)">
+            <g id="家庭" transform="translate(148.000000, 432.000000)">
+                <g id="Group-5-Copy-2" transform="translate(600.000000, 4.000000)">
+                    <g id="添加执行人" transform="translate(0.000000, 2.000000)">
+                        <g id="icon－xinjian">
+                            <use id="Oval-36" stroke="#9C9C9C" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                            <path d="M9.32306823,9.3229592 L12.3231145,9.3229592 C12.489254,9.3229592 12.6,9.20299703 12.6,9.0229592 C12.6,8.84292137 12.489254,8.7229592 12.3231145,8.7229592 L9.32306823,8.7229592 L9.32306823,5.67691755 C9.32306823,5.5107321 9.20309716,5.4 9.02309049,5.4 C8.84305043,5.4 8.72306823,5.51077318 8.72306823,5.67691755 L8.72306823,8.7229592 L5.67692663,8.7229592 C5.51073573,8.7229592 5.4,8.84292137 5.4,9.0229592 C5.4,9.20299703 5.51077682,9.3229592 5.67692663,9.3229592 L8.72306823,9.3229592 L8.72306823,12.322877 C8.72306823,12.4890214 8.84305043,12.5997535 9.02309049,12.5997535 C9.20309716,12.5997535 9.32306823,12.4890214 9.32306823,12.322877 L9.32306823,9.3229592 Z" id="添加文件" fill="#9C9C9C"></path>
+                        </g>
+                        <rect id="icon－tianjiazhixingren－default" x="0" y="0" width="18" height="18"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

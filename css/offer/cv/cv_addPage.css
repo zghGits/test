@@ -1,0 +1,951 @@
+/*----------------- 公共样式 ---------------------*/
+html,body{
+    height:100%;
+    width: 100%;
+}
+*,:focus{outline: none;box-sizing: border-box}
+ul,li{list-style-type: none}
+select{
+    border:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.error-info{color:red}
+
+.radio-unselect > span,
+.radio-select > span{
+    left: 12px;
+    position: relative;
+    top: -2px;
+    background-color: white !important;
+    border:none !important;
+}
+
+.radio-unselect{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../../../images/icon－xuanze－danxuan.svg") no-repeat;
+}
+
+.radio-select{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../../../images/icon－xuanze－xuzhong.svg") no-repeat;
+}
+
+.cv-addPage{
+    width: 100%;
+    height: 100%;
+}
+
+.cv-addPage > .left{
+    position: absolute;
+    left: 0;
+    right: 229pt;
+    height:100%;
+    background: #F5F5F5;
+    overflow: hidden;
+}
+
+.cv-addPage > .right{
+    position: absolute;
+    right: 0;
+    width: 229pt;
+    height: 100%;
+    background: white;
+    border-left: 1px solid #F0F0F0;
+    overflow-y: scroll;
+}
+
+.cv-addPage > .left > div{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.cv-addPage > .right > div{
+    width:100%;
+}
+
+.cv-addPage > .right > div:first-child{
+    border-bottom: 1px solid #E6EAEE;
+    padding: 20pt 0;
+}
+
+.cv-addPage > .right > div:first-child a{
+    display: block;
+    width: 100%;
+    height: 42pt;
+    line-height: 42pt;
+    padding-left:36pt;
+    font-family:PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.cv-addPage > .right > div:last-child{
+    padding: 0 14pt;
+}
+
+.cv-addPage > .right > div:last-child > div{
+    padding: 28pt 13pt;
+}
+
+.cv-addPage > .right > div:last-child > div:not(:last-child){
+    border-bottom:1px solid #E6EAEE;
+}
+
+.cv-addPage .talentLabel_div > div:first-child a,
+.cv-addPage .comments_div > div:first-child a{
+    position: absolute;
+    font-family: PingFangSC-Regular;
+    font-size: 12pt;
+    color: #4A90E2;
+    letter-spacing: 0px;
+    line-height: 12pt;
+    right: 0px;
+    text-decoration: none;
+}
+
+.cv-addPage .talentLabel_div > div:first-child > span:first-child,
+.cv-addPage .comments_div > div:first-child > span:first-child{
+    font-family: MicrosoftYaHei;
+    font-size: 12pt;
+    color: #666666;
+    letter-spacing: 1.71px;
+}
+
+.cv-addPage .talentLabel_div > div:first-child a > span,
+.cv-addPage .comments_div > div:first-child a > span{
+    font-size: 20pt;
+    position: relative;
+    top: 4px;
+}
+
+.cv-addPage .talentLabel_div .addEdit_div,
+.cv-addPage .comments_div .addEdit_div {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* 简历详情页面 */
+.cv-addPage .cvDetails-page{
+    padding: 11pt;
+}
+
+.cv-addPage .cvDetails-page > div:first-child{
+    position: relative;
+    height: 30pt;
+    line-height: 30pt;
+}
+
+.cv-addPage .cvDetails-page > div:first-child .cv_title{
+    font-family:PingFangSC-Regular;
+    font-size: 16pt;
+    color: #354052;
+}
+
+.cv-addPage .cvDetails-page > div:first-child button{
+    float: right;
+    width: 60pt;
+    height: 30pt;
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #999999;
+}
+
+.cv-addPage .cvDetails-page > div:first-child .download{
+    margin-right: 10pt;
+    background: #70BF73;
+    border: 1px solid #39953E;
+    color: #FFFFFF;
+    display: none;
+}
+
+.cv-addPage .cvDetails-page .wrap-box{
+    position: relative;
+    margin: 5pt 0;
+    padding: 16pt;
+    background: #FFFFFF;
+    border: 1px solid #E6EAEE;
+    border-radius: 4px;
+}
+
+.cv-addPage .cvDetails-page .wrap-box > div{
+    width: 100%;
+}
+
+.cv-addPage .cvDetails-page .wrap-box .title-box{
+    position: relative;
+    padding-bottom:18pt;
+    border-bottom: 1px solid #E6EAEE;
+}
+
+.cv-addPage .cvDetails-page .wrap-box .title-box .title{
+    font-family:PingFangSC-Regular;
+    font-size: 16pt;
+    color: #354052;
+}
+
+.cv-addPage .cvDetails-page .wrap-box .title-box .edit_link{
+    float: right;
+}
+
+.cv-addPage .cvDetails-page .wrap-box .content-box{
+    padding: 23px 0;
+}
+
+.cv-addPage .cvDetails-page .wrap-box .footer{
+    padding-top: 14pt;
+    display: none;
+}
+
+.cv-addPage .cvDetails-page .wrap-box .footer button{
+    width: 90pt;
+    height:30pt;
+    border-radius: 4px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    outline:none;
+}
+
+.cv-addPage .cvDetails-page .wrap-box .footer .save{
+    background: #70BF73;
+    border: 1px solid #39953E;
+    color: #FFFFFF;
+}
+
+.cv-addPage .cvDetails-page .wrap-box .footer .cancel{
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    color: #333333;
+}
+
+.cv-addPage .cvDetails-page .wrap-box .edit-mode{
+    display: none;}
+
+.cv-addPage .cvDetails-page .wrap-box .edit-mode .inner-box{
+    margin: 17px 0;
+    position: relative;
+}
+
+.cv-addPage .cvDetails-page .wrap-box .unEdit-mode .state,
+.cv-addPage .cvDetails-page .wrap-box .edit-mode .state{
+    font-size: 12pt;
+    color: #B2B2B2;
+    margin-bottom: 6px;
+    font-weight: 400;
+}
+
+.cv-addPage .cvDetails-page .wrap-box .unEdit-mode .content{
+    font-family:SFNSText-Regular;
+    font-size: 14pt;
+    color: #354052;
+    border:none;
+    background: none;
+    vertical-align: top;
+}
+
+.cv-addPage .cvDetails-page .wrap-box .edit-mode .content{
+    height: 30px;
+    background: #F5F5F5;
+    border:1px solid #F5F5F5;
+    resize: none;
+    font-size:14pt;
+    color: #333333;
+    padding-left: 10px;
+    vertical-align: top;
+    margin-bottom: 17px;
+}
+
+.cv-addPage .cvDetails-page .wrap-box .edit-mode .inner-box > div,
+.cv-addPage .cvDetails-page .wrap-box .unEdit-mode .inner-box > div{
+    vertical-align: top;
+}
+
+.cv-addPage .cvDetails-page .wrap-box .unEdit-mode .middle-dot{
+    font-size: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.cv-addPage .cvDetails-page .base-info .unEdit-mode .left,
+.cv-addPage .cvDetails-page .base-info .unEdit-mode .right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cv-addPage .cvDetails-page .base-info .unEdit-mode .left{
+    text-align: center;
+    margin-right: 48px;
+}
+
+.cv-addPage .cvDetails-page .base-info .unEdit-mode .right{
+    width: 68%;
+    text-align: left;
+}
+
+.cv-addPage .cvDetails-page .base-info .unEdit-mode .icon{
+    margin-right: 16pt;
+}
+
+.cv-addPage .cvDetails-page .base-info .unEdit-mode .tag{
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    background: #F5F5F5;
+    border-radius: 2px;
+    margin: 0 10px;
+}
+
+.cv-addPage .cvDetails-page .base-info .unEdit-mode .avator{
+    width: 98px;
+    border-radius: 4px;
+}
+
+.cv-addPage .cvDetails-page .base-info .unEdit-mode [name="name"]{
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #354052;
+}
+
+.cv-addPage .cvDetails-page .base-info .unEdit-mode .inner-box:not(:first-child){
+    margin: 12px 0;
+}
+
+.cv-addPage .cvDetails-page .base-info .unEdit-mode .right .inner-box:last-child .state{
+    position: absolute;
+    right: 130px;
+}
+
+.cv-addPage .cvDetails-page .base-info .unEdit-mode .right .inner-box:last-child [name='source']{
+    position: absolute;
+    right: 50px;
+}
+
+.cv-addPage .cvDetails-page .base-info .edit-mode{
+    display: none;
+}
+
+.cv-addPage .cvDetails-page .base-info .edit-mode .inner-box:first-child{
+    border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 25px;
+}
+
+.cv-addPage .cvDetails-page .base-info .edit-mode .inner-box > div:nth-child(2){
+    margin-left: 71px;
+}
+
+.cv-addPage .cvDetails-page .base-info .edit-mode .inner-box > div:nth-child(3){
+    margin-left: 80px;
+}
+
+.cv-addPage .cvDetails-page .base-info .edit-mode .inner-box > div:not(:first-child) .content{
+    background: transparent;
+    border: 1px solid transparent;
+    padding-left: 0;
+}
+
+.cv-addPage .cvDetails-page .base-info .edit-mode .inner-box{
+    position: relative;
+    width: 100%;
+}
+
+.cv-addPage .cvDetails-page .base-info .edit-mode .inner-box > div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cv-addPage .cvDetails-page .base-info .edit-mode [name="position"]{
+    width: 146pt;
+}
+
+.cv-addPage .cvDetails-page .base-info .edit-mode [name="workYear"]{
+    width: 50px;
+}
+
+.cv-addPage .cvDetails-page .base-info .edit-mode .radio-unselect{
+    margin-right:40px;
+}
+
+.cv-addPage .cvDetails-page .base-info .edit-mode [name="name"],
+.cv-addPage .cvDetails-page .base-info .edit-mode [name="mobile"],
+.cv-addPage .cvDetails-page .base-info .edit-mode [name="email"],
+.cv-addPage .cvDetails-page .base-info .edit-mode [name="name"],
+.cv-addPage .cvDetails-page .base-info .edit-mode .fstWorkDate,
+.cv-addPage .cvDetails-page .base-info .edit-mode .residentAddress{
+    width: 190px;
+}
+
+.cv-addPage .cvDetails-page .base-info .edit-mode [name="idCard"],
+.cv-addPage .cvDetails-page .base-info .edit-mode [name="currentAddress"]{
+    width: 100%;
+}
+
+.cv-addPage .cvDetails-page .base-info .edit-mode .select2-selection{
+    border:none;
+}
+
+.cv-addPage .cvDetails-page .base-info .edit-mode .select2-selection__arrow{
+    display: none;
+}
+
+.cv-addPage .cvDetails-page .base-info .edit-mode .select2-selection__rendered{
+    height: 30px;
+    background: #F5F5F5;
+    border:1px solid #F5F5F5;
+    resize: none;
+    font-size:14pt;
+    color: #333333;
+    padding-left: 10px;
+    vertical-align: top;
+    margin-bottom: 17px;
+    width: 180px;
+}
+
+.cv-addPage .cvDetails-page .job-intention .inner-box{
+    padding: 20px 0;
+}
+
+.cv-addPage .cvDetails-page .job-intention .inner-box:not(:last-child){
+    border-bottom:1px solid #E6EAEE;
+}
+
+.cv-addPage .cvDetails-page .job-intention .unEdit-mode .content{
+    display: inline-block;
+}
+
+.cv-addPage .cvDetails-page .job-intention .unEdit-mode [name="fastestEnterDate"]{
+    width: 150px;
+}
+
+.cv-addPage .cvDetails-page .job-intention .inner-box > div{
+    display: inline-block;
+    margin-right: 40px;
+    width: 146px;
+}
+
+.cv-addPage .cvDetails-page .job-intention .edit-mode .content{
+    width: 160px;
+}
+
+.cv-addPage .cvDetails-page .job-intention .edit-mode [name="resumeSource"]{
+    background:none;
+    border:none;
+}
+
+.cv-addPage .cvDetails-page .edu-info .unEdit-mode .inner-box{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E6EAEE;
+}
+
+.cv-addPage .cvDetails-page .edu-info .unEdit-mode .inner-box > div{
+	display: inline-block;
+	margin-right: 30px;
+	vertical-align: top;
+}
+
+.cv-addPage .cvDetails-page .edu-info .edit-mode .inner-box{
+    position: relative;
+    border-bottom:1px solid #E6EAEE;
+    padding-bottom: 10px;
+}
+
+.cv-addPage .cvDetails-page .edu-info .edit-mode .inner-box > div{
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+.cv-addPage .cvDetails-page .edu-info .edit-mode [name="isFullTime"]{
+    background: none;
+    border:none;
+}
+
+.cv-addPage .cvDetails-page .edu-info .edit-mode .del{
+    position: absolute;
+    right: 10px;
+    top:0px;
+    font-family:PingFangSC-Regular;
+    font-size: 12pt;
+    color: #E34D4D;
+}
+
+.cv-addPage .cvDetails-page .edu-info .edit-mode .operate-link{
+    font-family:PingFangSC-Regular;
+    font-size: 14pt;
+    color: #4D92E3;
+    line-height: 14pt;
+    cursor: pointer;
+}
+
+.cv-addPage .cvDetails-page .work-experience .edit-mode .inner-box,
+.cv-addPage .cvDetails-page .work-experience .unEdit-mode .inner-box{
+    border-bottom: 1px solid #E6EAEE;
+}
+
+.cv-addPage .cvDetails-page .work-experience .unEdit-mode .inner-box > div{
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+}
+
+.cv-addPage .cvDetails-page .work-experience .unEdit-mode .inner-box > div:last-child{
+    width: 60%;
+}
+
+.cv-addPage .cvDetails-page .work-experience .edit-mode .inner-box > div:not(:last-child){
+    display: inline-block;
+    margin-right: 36px;
+}
+
+.cv-addPage .cvDetails-page .work-experience .edit-mode .content{
+    width: 146px;
+}
+
+.cv-addPage .cvDetails-page .work-experience .edit-mode [name="jobDesc"]{
+    resize: none;
+    width: 510px;
+    height:90px;
+}
+
+.cv-addPage .cvDetails-page .work-experience .edit-mode .operate-link{
+    font-family:PingFangSC-Regular;
+    font-size: 14pt;
+    color: #4D92E3;
+    line-height: 14pt;
+    cursor: pointer;
+}
+
+.cv-addPage .cvDetails-page .work-experience .edit-mode .del{
+    position: absolute;
+    right:0;
+    top:0;
+    font-family: PingFangSC-Regular;
+    font-size: 12pt;
+    color: #E34D4D;
+    cursor: pointer;
+}
+
+.cv-addPage .cvDetails-page .employee-skill .unEdit-mode ul{
+    text-align: left;
+    margin-left: 0;
+    padding: 0;
+}
+
+.cv-addPage .cvDetails-page .employee-skill .unEdit-mode .item{
+    float: left;
+    margin-right: 22px;
+    margin-bottom: 10px;
+}
+
+.cv-addPage .cvDetails-page .employee-skill .edit-mode .inner-box{
+    border-bottom:1px solid #E6EAEE;
+    padding-bottom: 10px;
+}
+
+.cv-addPage .cvDetails-page .employee-skill .edit-mode .item{
+    position: relative;
+    display: inline-block;
+    margin-right:10px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 8px;
+    padding-right: 20px;
+    min-width: 50px;
+}
+
+.cv-addPage .cvDetails-page .employee-skill .edit-mode .item .del{
+    position: absolute;
+    right: 3px;
+    color: #B0BDCA;
+    font-size: 20pt;
+    top: -3px;
+    cursor: pointer;
+}
+
+.cv-addPage .cvDetails-page .employee-skill .edit-mode .operate-link{
+    font-family:PingFangSC-Regular;
+    font-size: 14pt;
+    color: #4D92E3;
+    line-height: 14pt;
+}
+
+.cv-addPage .cvDetails-page .language-skill .unEdit-mode ul{
+    text-align: left;
+    margin-left: 0;
+    padding: 0;
+}
+
+.cv-addPage .cvDetails-page .language-skill .unEdit-mode li{
+    float: left;
+    margin-right: 53px;
+    margin-bottom: 10px;
+}
+
+.cv-addPage .cvDetails-page .language-skill .unEdit-mode li .state{
+    margin-right: 16px;
+}
+
+.cv-addPage .cvDetails-page .language-skill .unEdit-mode li .content{
+    position: relative;
+    top: -3px;
+}
+
+.cv-addPage .cvDetails-page .language-skill .edit-mode .inner-box{
+    border-bottom:1px solid #E6EAEE;
+    padding-bottom: 10px;
+}
+
+.cv-addPage .cvDetails-page .language-skill .edit-mode .inner-box > div{
+    display: inline-block;
+    margin-right: 86px;
+}
+
+.cv-addPage .cvDetails-page .language-skill .edit-mode .inner-box .content:not([name="proficiency"]){
+    width: 146px;
+}
+
+.cv-addPage .cvDetails-page .language-skill .edit-mode .inner-box [name="proficiency"]{
+    background: none;
+    border:none;
+}
+
+.cv-addPage .cvDetails-page .language-skill .edit-mode .del{
+    position: absolute;
+    top:0;
+    right:0;
+    font-family: PingFangSC-Regular;
+    font-size: 12pt;
+    color: #E34D4D;
+}
+
+.cv-addPage .cvDetails-page .language-skill .edit-mode .operate-link{
+    font-family: PingFangSC-Regular;
+    font-size: 14pt;
+    color: #4D92E3;
+    line-height: 14pt;
+}
+
+.cv-addPage .cvDetails-page .credentials .unEdit-mode ul{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.cv-addPage .cvDetails-page .credentials .unEdit-mode li{
+    float: left;
+    margin-right: 34px;
+
+}
+
+.cv-addPage .cvDetails-page .credentials .edit-mode .inner-box{
+    padding-bottom: 10px;
+    border-bottom:1px solid #E6EAEE;
+}
+
+.cv-addPage .cvDetails-page .credentials .edit-mode .inner-box > div{
+    display: inline-block;
+    margin-right: 34px;
+}
+
+.cv-addPage .cvDetails-page .credentials .edit-mode .content{
+    width: 176px;
+}
+
+.cv-addPage .cvDetails-page .credentials .edit-mode .del{
+    position: absolute;
+    right:0;
+    top:0;
+    font-family:PingFangSC-Regular;
+    font-size: 12pt;
+    color: #E34D4D;
+}
+
+.cv-addPage .cvDetails-page .credentials .edit-mode .operate-link{
+    font-family: PingFangSC-Regular;
+    font-size: 14pt;
+    color: #4D92E3;
+    line-height: 14pt;
+}
+
+.cv-addPage .cvDetails-page .pro-exp .unEdit-mode .inner-box{
+    padding-bottom: 10px;
+    border-bottom:1px solid #E6EAEE;
+}
+
+.cv-addPage .cvDetails-page .pro-exp .unEdit-mode .inner-box > div{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.cv-addPage .cvDetails-page .pro-exp .unEdit-mode .inner-box > div:last-child{
+    width: 60%;
+}
+
+.cv-addPage .cvDetails-page .pro-exp .edit-mode .inner-box{
+    padding-bottom: 10px;
+    border-bottom:1px solid #E6EAEE;
+}
+
+.cv-addPage .cvDetails-page .pro-exp .edit-mode .inner-box > div:nth-child(-n+4){
+    display: inline-block;
+    margin-right: 36px;
+}
+
+.cv-addPage .cvDetails-page .pro-exp .edit-mode .inner-box > div:nth-child(-n+4) .content{
+    width: 160px;
+}
+
+.cv-addPage .cvDetails-page .pro-exp .edit-mode .inner-box > div:nth-child(n+5) .content{
+    width: 100%;
+}
+
+.cv-addPage .cvDetails-page .pro-exp .edit-mode .inner-box [name="projectDesc"]{
+    height:90px;
+}
+
+.cv-addPage .cvDetails-page .pro-exp .edit-mode .del{
+    position: absolute;
+    right:0;
+    top:0;
+    font-family:PingFangSC-Regular;
+    font-size: 12pt;
+    color: #E34D4D;
+}
+
+.cv-addPage .cvDetails-page .pro-exp .edit-mode .operate-link{
+    font-family:PingFangSC-Regular;
+    font-size: 14pt;
+    color: #4D92E3;
+    line-height: 14pt;
+}
+
+.cv-addPage .cvDetails-page .train-exp .unEdit-mode .inner-box {
+    padding-bottom: 10px;
+    border-bottom:1px solid #E6EAEE;
+}
+
+.cv-addPage .cvDetails-page .train-exp .unEdit-mode .inner-box > div{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.cv-addPage .cvDetails-page .train-exp .unEdit-mode .inner-box > div:last-child{
+    width: 60%;
+}
+
+.cv-addPage .cvDetails-page .train-exp .edit-mode .inner-box{
+    padding-bottom: 10px;
+    border-bottom:1px solid #E6EAEE;
+}
+
+.cv-addPage .cvDetails-page .train-exp .edit-mode .inner-box > div:nth-child(-n+6){
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.cv-addPage .cvDetails-page .train-exp .edit-mode .inner-box > div:nth-child(-n+6) .content{
+    width: 156px;
+}
+
+.cv-addPage .cvDetails-page .train-exp .edit-mode .inner-box > div:last-child{
+    width: 100%;
+}
+
+.cv-addPage .cvDetails-page .train-exp .edit-mode .inner-box [name="trainingDesc"]{
+    width: 100%;
+    height: 90px;
+}
+
+.cv-addPage .cvDetails-page .train-exp .edit-mode .operate-link{
+    font-family:PingFangSC-Regular;
+    font-size: 14pt;
+    color: #4D92E3;
+    line-height: 14pt;
+}
+
+.cv-addPage .cvDetails-page .train-exp .edit-mode .inner-box .del{
+    position: absolute;
+    right:0;
+    top:0;
+    font-family: PingFangSC-Regular;
+    font-size: 12pt;
+    color: #E34D4D;
+}
+
+.cv-addPage .cvDetails-page .self-assessment .edit-mode .content{
+    width: 100%;
+    height:90px;
+}
+
+.cv-addPage .cvDetails-page .self-assessment .edit-mode .del{
+    position: absolute;
+    right:0;
+    top:-30px;
+    font-family: PingFangSC-Regular;
+    font-size: 12pt;
+    color: #E34D4D;
+}
+
+.cv-addPage .cvDetails-page .expand-wrap .item{
+    position: relative;
+    display: none;
+    margin-right: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #B0BDC9;
+    border-radius: 3px;
+    width: 131px;
+    height:30px;
+    cursor: pointer;
+}
+
+.cv-addPage .cvDetails-page .expand-wrap .item span{
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.cv-addPage .cvDetails-page .expand-wrap .item span:first-child{
+    right:30px;
+    width: 101px;
+    font-family:PingFangSC-Regular;
+    font-size: 14pt;
+    color: #999999;
+}
+
+.cv-addPage .cvDetails-page .expand-wrap .item span:last-child{
+    left:101px;
+    width: 30px;
+    background: #B0BDC9;
+    font-size: 20pt;
+    color: white;
+}
+
+/* 操作记录页面 */
+.cv-addPage .operateRecord-page{
+    text-align: center;
+}
+
+.cv-addPage .operateRecord-page table{
+    margin: 0 auto;
+}
+
+.cv-addPage .operateRecord-page table th{
+    text-align: center;
+    padding: 10px 0;
+    min-width: 140px;
+}
+
+.cv-addPage .operateRecord-page table td{
+    padding:10px 0;
+}
+
+/* 测评记录页面 */
+.cv-addPage .appraisalRecord-page{
+    text-align: center;
+}
+
+.cv-addPage .appraisalRecord-page table{
+    margin: 0 auto;
+}
+
+.cv-addPage .appraisalRecord-page table th{
+    text-align: center;
+    padding: 10px 0;
+    min-width: 100px;
+}
+
+.cv-addPage .appraisalRecord-page table tbody td{
+    padding:10px 0;
+}
+
+.cv-addPage .appraisalRecord-page table tbody tr td:first-child{
+    color: #acacac;
+}
+
+.cv-addPage .appraisalRecord-page table tbody tr:nth-child(-n+5) td:nth-child(2),
+.cv-addPage .appraisalRecord-page table tbody tr:nth-child(-n+5) td:nth-child(3){
+    color:orange;
+}
+
+.cv-addPage .appraisalRecord-page table tbody tr:nth-child(n+6) td:nth-child(2),
+.cv-addPage .appraisalRecord-page table tbody tr:nth-child(n+6) td:nth-child(3){
+    color:green;
+}
+
+/* 面试记录页面 */
+.cv-addPage .interviewRecord-page{
+    padding:5px;
+}
+
+.cv-addPage .interviewRecord-page .log{
+    border-left:1px dotted #929292;
+    margin-left: 115px;
+    text-align: left;
+}
+
+/* 人才标签 */
+.cv-addPage .talentLabel_div .labelContainer .item{
+    position: relative;
+    display: inline-block;
+    height:24px;
+    line-height: 24px;
+    margin: 10px 10px 10px 0;
+    background: #F5F5F5;
+    border-radius: 2px;
+    padding-right: 20px;
+}
+
+.cv-addPage .talentLabel_div .labelContainer .item .text{
+    font-family: MicrosoftYaHei;
+    font-size: 12pt;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 12pt;
+    margin-left: 8px;
+}
+
+.cv-addPage .talentLabel_div .labelContainer .item .del{
+    position: absolute;
+    right:0px;
+    font-size: 10pt;
+    color: #B0BDCA;
+    right: 7px;
+    top: 1px;
+}
+
+/* 简历评语 */
+.cv-addPage .comments_div .commentsContainer .item{
+    position: relative;
+    margin: 10px auto;
+    background: #F5F5F5;
+    border-radius: 2px;
+    padding: 9px;
+    width: 100%;
+}
+
+.cv-addPage .comments_div .commentsContainer .item .text{
+    width: 200px;
+}
+
+.cv-addPage .comments_div .commentsContainer .item .del{
+    position: absolute;
+    right: 5px;
+    top:5px;
+    color: #B0BDCA;
+    font-size:10pt;
+}
